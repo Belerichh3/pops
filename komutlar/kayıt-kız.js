@@ -15,9 +15,9 @@ module.exports.run = async (client, message, args) => {
     let ardademrisim = args.slice(1).join(" ");
     if(!ardademruser) return message.reply('bir kullanıcı etiketlemelisin.')
     if (!ardademrisim) return message.reply(`bir isim girmelisin.`);
-    if (ardademrisim.length > 13)
+    if (ardademrisim.length > 20)
       return message.reply(
-        `Lütfen \`13\` karakteri geçmeyecek şekilde bir isim giriniz!`
+        `Lütfen \`20\` karakteri geçmeyecek şekilde bir isim giriniz!`
       );
 
 	       message.channel.send(`${ardademruser} isimli kullanıcıyı kayıt ettim.`).then(msg => {
