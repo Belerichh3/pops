@@ -8,7 +8,7 @@ const fs = require("fs");
 // ArdaDemr Youtube Kanalına ait KAYIT bot altyapısı
 //Uptime için__________________________________________________________________
 app.get("/", (req, res) => {
-  res.send("ArdaDemr Discord Bot Altyapısı");
+  res.send("Plus Kayıt Botu");
 });
 app.listen(process.env.PORT);
 
@@ -38,7 +38,7 @@ fs.readdir("./events/", (err, files) => {
 });
 
 client.on("ready", () => {
-  console.log(`ArdaDemr Discord Bot Altyapısı BOT AKTİF`);
+  console.log(`Plus Kayıt Botu Aktif`);
 });
 
 client.login(process.env.TOKEN);
@@ -47,7 +47,7 @@ client.login(process.env.TOKEN);
 
 //------------------OTOMESAJ
 client.on('guildMemberAdd', async member  => {
-  if(member.guild.id!="SUNUCU ID") return false;
+  if(member.guild.id!="789564565296775200") return false;
  let member2 = member.user 
  let zaman = new Date().getTime() - member2.createdAt.getTime()
  var user = member2 
@@ -61,14 +61,14 @@ client.on('guildMemberAdd', async member  => {
     const ardademrembed = new Discord.MessageEmbed()
     .setColor('#efff00')
      .setDescription(`**Hoş Geldin:** ${member}\n**Discord'a Kayıt Olma Süresi:** ${gecen}\n**Hesap Yeni Mi?:** ${ardademrzaman}\n\nSunucumuza kayıt olmak için gerçek ismini yaz ve bekle.`)
- client.channels.cache.get('KANAL ID').send(ardademrembed)
+ client.channels.cache.get('823617047991943258').send(ardademrembed)
    
            });
 
 
 //------------------OTOROL
 client.on('guildMemberAdd', member => {
-var role = member.guild.roles.cache.find(role => role.name == "OTO VERİLECEK ROL ADI")
+var role = member.guild.roles.cache.find(role => role.name == "Kayıt Bekleniyor")
 member.roles.add(role);
 });
 // ArdaDemr Youtube Kanalına ait KAYIT bot altyapısı

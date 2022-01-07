@@ -2,13 +2,13 @@ const Discord = require("discord.js");
 const db = require('quick.db');
 module.exports.run = async (client, message, args) => {
 
-    if(message.guild.id !== "SUNUCU ID") return message.channel.send(`Bu komut bu sunucuda çalışmaz.`) // Bu bölümü istemiyorsanız silebilirsiniz.
+    if(message.guild.id !== "789564565296775200") return message.channel.send(`Bu komut bu sunucuda çalışmaz.`) // Bu bölümü istemiyorsanız silebilirsiniz.
 // ArdaDemr Youtube Kanalına ait KAYIT bot altyapısı
-	if(!message.member.roles.cache.find(x => x.name== "KAYIT YETKILISI ROL ADI")) return message.channel.send(`Yeterli izne sahip değilsin.`)
+	if(!message.member.roles.cache.find(x => x.name== "Moderatör")) return message.channel.send(`Yeterli izne sahip değilsin.`)
 
-    if(message.channel.id !== "KANAL ID") return message.channel.send("Kayıtlar sadece kayıt kanalından yapılabilir.")
+    if(message.channel.id !== "823617047991943258") return message.channel.send("Kayıtlar sadece kayıt kanalından yapılabilir.")
 
-    let ardademrverilecekrol = message.guild.roles.cache.find(x => x.name == "VERİLECEK ROL ADI")
+    let ardademrverilecekrol = message.guild.roles.cache.find(x => x.name == "Üye")
     if (message.guild.me.roles.highest.position <= ardademrverilecekrol.position) return message.channel.send(`Bu rol benim rolümün üstünde olduğu için vermeye iznim yok.`)
 
     let ardademruser = message.mentions.users.first()

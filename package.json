@@ -1,7 +1,7 @@
 {
   "name": "ArdaDemr",
   "version": "1.0.0",
-  "description": "ArdaDemr Youtube Kanalına Ait Kayıt Bot Altyapısı",
+  "description": "Plus Kayıt Botu",
   "main": "node ardademr.js",
   "scripts": {
     "start": "node ardademr.js"
