@@ -24,6 +24,8 @@ fs.readdir("./komutlar/", (err, files) => {
     console.log(`Komut Yükleme Çalışıyor: ${cmdFileName}`);
     client.commands.set(cmd.help.name, cmd);
   });
+  client.on("ready", () => {
+  client.channels.get("856144839988871208").join();
 });
 // ArdaDemr Youtube Kanalına ait KAYIT bot altyapısı
 //EVENTS Yükleyici_______________________________________________________________
@@ -73,6 +75,3 @@ member.roles.add(role);
 });
 // ArdaDemr Youtube Kanalına ait KAYIT bot altyapısı
 
-client.on("ready", () => {
-  client.channels.get("928997008323264572").join();
-})
