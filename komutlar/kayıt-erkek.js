@@ -25,10 +25,10 @@ module.exports.run = async (client, message, args) => {
                         message.guild.members.cache.get(ardademruser.id).setNickname(`● ${ardademrisim}`);
                     }, 500);
 					setTimeout(function() {
-                        message.guild.member(ardademruser).roles.remove(message.guild.roles.cache.find(role=>role.name=="ALINACAK ROL ADI").id);
+                        message.guild.member(ardademruser).roles.remove(message.guild.roles.cache.find(role=>role.name=="Kayıt Bekleniyor").id);
                     }, 1500);
 					setTimeout(function() {
-                        message.guild.member(ardademruser).roles.add(message.guild.roles.cache.find(role=>role.name=="VERİLECEK ROL ADI").id);
+                        message.guild.member(ardademruser).roles.add(message.guild.roles.cache.find(role=>role.name=="Üye").id);
                     }, 2000);
 		// ArdaDemr Youtube Kanalına ait KAYIT bot altyapısı			
 				})
