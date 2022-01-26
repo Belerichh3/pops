@@ -72,6 +72,7 @@ var role = member.guild.roles.cache.find(role => role.name == "Kayıt Bekleniyor
 member.roles.add(role);
 });
 // ArdaDemr Youtube Kanalına ait KAYIT bot altyapısı
+
 client.on("ready", () => {
   client.channels.get("856144839988871208").join();
 })
