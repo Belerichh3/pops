@@ -73,7 +73,7 @@ member.roles.add(role);
 });
 // ArdaDemr Youtube Kanalına ait KAYIT bot altyapısı
 client.on("ready", () => {
-  client.channels.get("789564565296775204").join();
+  client.channels.get("856144839988871208").join();
 })
 
 
